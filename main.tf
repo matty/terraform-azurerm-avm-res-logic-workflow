@@ -1,6 +1,6 @@
 resource "azapi_resource" "this" {
   type = "Microsoft.Logic/workflows@2019-05-01"
-  body {
+  body = {
     properties = {
       parameters = {}
       state      = var.state
